@@ -4,3 +4,6 @@
 [submodule "Submodules/CMSSupport"]
 	path = Submodules/CMSSupport
 	url = https://github.com/Sage-Bionetworks/CMSSupport.git
+[submodule "Submodules/ZipZap"]
+	path = Submodules/ZipZap
+	url = https://github.com/Sage-Bionetworks/ZipZap.git
