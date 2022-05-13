@@ -1,9 +1,9 @@
 [submodule "Submodules/RNCryptor"]
 	path = Submodules/RNCryptor
-	url = https://github.com/Sage-Bionetworks/RNCryptor.git
+url=https://github.com/ohsu-molemapper/RNCryptor.git
 [submodule "Submodules/CMSSupport"]
 	path = Submodules/CMSSupport
-	url = https://github.com/Sage-Bionetworks/CMSSupport.git
+url=https://github.com/ohsu-molemapper/CMSSupport.git
 [submodule "Submodules/ZipZap"]
 	path = Submodules/ZipZap
-	url = https://github.com/Sage-Bionetworks/ZipZap.git
+url=https://github.com/ohsu-molemapper/ZipZap.git
