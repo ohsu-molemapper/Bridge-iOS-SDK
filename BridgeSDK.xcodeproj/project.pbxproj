@@ -101,7 +101,6 @@
 /* Begin PBXBuildFile section */
 		600F888A1D42DDC700DAD563 /* SBBUploadManagerUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 600F88891D42DDC700DAD563 /* SBBUploadManagerUnitTests.m */; };
 		601E8A101B191DAE00BB02FB /* MockURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 601E8A0F1B191DAE00BB02FB /* MockURLSession.m */; };
-		601F7CB51D6246DC00C5FE09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601F7CB41D6246DC00C5FE09 /* MobileCoreServices.framework */; };
 		601F7D1C1D67C03400C5FE09 /* NSString+SBBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 601F7D1A1D67C03400C5FE09 /* NSString+SBBAdditions.h */; };
 		601F7D1D1D67C03400C5FE09 /* NSString+SBBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 601F7D1B1D67C03400C5FE09 /* NSString+SBBAdditions.m */; };
 		602EEE5D1A520EBA00C776FC /* SBBDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80F7C33919E5DC0D00574800 /* SBBDataModel.xcdatamodeld */; };
@@ -526,6 +525,7 @@
 		80F88E541AF991B10090D462 /* _SBBScheduledActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F88E521AF991B10090D462 /* _SBBScheduledActivity.m */; };
 		80FA54DF1A25110E00EDE46E /* SBBCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FA54DD1A25110E00EDE46E /* SBBCacheManager.h */; };
 		80FA54E01A25110E00EDE46E /* SBBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FA54DE1A25110E00EDE46E /* SBBCacheManager.m */; };
+		C3EB91022836B91B0014D4CF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EB91012836B91B0014D4CF /* CoreServices.framework */; };
 		D4FA37FD1A2B004B00E7CF1E /* SBBConsentManagerUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FA37FC1A2B004B00E7CF1E /* SBBConsentManagerUnitTests.m */; };
 		D4FA38031A2B144000E7CF1E /* sample-signature.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FA38021A2B144000E7CF1E /* sample-signature.png */; };
 		F81BE77C20B4951F00EE57D3 /* BridgeSDK_Test.h in Headers */ = {isa = PBXBuildFile; fileRef = F81BE77A20B4951F00EE57D3 /* BridgeSDK_Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1179,6 +1179,7 @@
 		80F88E521AF991B10090D462 /* _SBBScheduledActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SBBScheduledActivity.m; sourceTree = "<group>"; };
 		80FA54DD1A25110E00EDE46E /* SBBCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBCacheManager.h; sourceTree = "<group>"; };
 		80FA54DE1A25110E00EDE46E /* SBBCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBCacheManager.m; sourceTree = "<group>"; };
+		C3EB91012836B91B0014D4CF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		D48FAA211A2E5C6C00D50D1C /* SBBConsentManagerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBConsentManagerInternal.h; sourceTree = "<group>"; };
 		D4FA37FC1A2B004B00E7CF1E /* SBBConsentManagerUnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBConsentManagerUnitTests.m; sourceTree = "<group>"; };
 		D4FA38021A2B144000E7CF1E /* sample-signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-signature.png"; sourceTree = "<group>"; };
@@ -1218,9 +1219,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601F7CB51D6246DC00C5FE09 /* MobileCoreServices.framework in Frameworks */,
 				8026D6A019EC46E3008942B0 /* libz.dylib in Frameworks */,
 				807D50701E9DACE600FB6F4F /* openssl.a in Frameworks */,
+				C3EB91022836B91B0014D4CF /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1442,6 +1443,7 @@
 		8063FF901E4A9FB1001B0C3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3EB91012836B91B0014D4CF /* CoreServices.framework */,
 				607B127C1E4BCF8A00237EA7 /* openssl.a */,
 				607B127A1E4BCE0B00237EA7 /* openssl */,
 			);
@@ -2353,6 +2355,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -3124,7 +3127,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
@@ -3163,7 +3166,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
